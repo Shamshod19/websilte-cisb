@@ -45,9 +45,58 @@
         </div>
       </nav>
     <main class="container mt-4">
-        <div id="heading"></div>
-        <div id="gallery" class="row row-cols-md-3"></div>
-        
+      <div id="header"></div>
+      <div id="gallery" class="row row-cols-md-3"></div>
+
+      <!---Modal --->
+      <div class="modal fade bg-dark" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content bd-info">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Image Gallery with Carousel</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                  <!-- Indicators/dots -->
+                  <div id='divButton' class="carousel-indicators">
+                    
+                  </div>
+
+                  <!-- The slideshow/carousel -->
+                  <div id='divSlide' class="carousel-inner">
+ 
+                  </div>
+
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+
+              <!---End Carousel --->
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <h4><img src="img/logo.png" style="width:100px"></h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
     </main>
     <footer>
 
